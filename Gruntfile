@@ -1,0 +1,31 @@
+module.exports = function (grunt) {
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        uglify: {
+            options: {
+                banner: '/*! <%= pkg.name %> v<%= pkg.version %>\n * <%= pkg.homepage %> */\n',
+                sourceMap: true,
+                sourceMapName: 'js/<%= pkg.name %>.min.js.map'
+        },
+            build: {
+                src: 'js/<%= pkg.name %>.js',
+                dest: 'js/<%= pkg.name %>.min.js'
+            }
+        },
+        cssmin: {
+            options: {
+                sourceMap: true
+            },
+            target: {
+                files: {
+                    'css/<%= pkg.name %>.min.css': ['css/<%= pkg.name %>.css']
+                }
+            }
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+    grunt.registerTask('default', ['uglify', 'cssmin']);
+};

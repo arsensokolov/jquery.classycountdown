@@ -1,6 +1,6 @@
-# jQuery ClassyCountdown
+# Slick Circular jQuery Countdown Plugin - Classy Countdown
 
-Hi, %username%, this is plugin not me, but I don't find any repositories for issue report and fix bug.
+Classy Countdown is a jQuery plugin that makes use of Html5 canvas to render a slick, circular, themeable countdown timer on your web page.
 
 ## Dependencies:
 
