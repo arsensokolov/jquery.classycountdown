@@ -14,7 +14,7 @@
   },
   "contributors": [{
     "name": "Arsen Bespalov",
-    "email": "me@arsen.pw"
+    "email": "bespalov@arsen.pw"
   }],
   "devDependencies": {
     "grunt": "^1.0.3",
