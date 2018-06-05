@@ -13,16 +13,16 @@ Classy Countdown is a jQuery plugin that makes use of Html5 canvas to render a s
 1. Load jQuery and other dependencies in the web page.
 
 ```html
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/jquery.knob.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-knob@1.2.11/dist/jquery.knob.min.js"></script>
 <script src="js/jquery.throttle.js"></script>
 ```
 
 2. Load the jQuery Classy Countdown plugin's files in the web page.
 
 ```html
-<link href="css/jquery.classycountdown.css" rel="stylesheet">
-<script src="js/jquery.classycountdown.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.classycountdown@1.0.1/css/jquery.classycountdown.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery.classycountdown@1.0.1/js/jquery.classycountdown.min.js"></script>
 ```
 
 3. Call the plugin to render a circular countdown timer within the target container.
