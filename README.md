@@ -1,0 +1,2 @@
+# jquery.classycountdown
+jQuery ClassyCountdown
