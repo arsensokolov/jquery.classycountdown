@@ -1,8 +1,12 @@
 {
   "name": "jquery.classycountdown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Slick Circular jQuery Countdown Plugin",
-  "keywords": ["countdown", "jquery", "plugin"],
+  "keywords": [
+    "countdown",
+    "jquery",
+    "plugin"
+  ],
   "homepage": "https://github.com/ArsenBespalov/jquery.classycountdown",
   "bugs": {
     "url": "https://github.com/ArsenBespalov/jquery.classycountdown/issues"
@@ -12,10 +16,12 @@
     "name": "Marius Stanciu - Sergiu",
     "email": "marius@class.pm"
   },
-  "contributors": [{
-    "name": "Arsen Bespalov",
-    "email": "bespalov@arsen.pw"
-  }],
+  "contributors": [
+    {
+      "name": "Arsen Bespalov",
+      "email": "bespalov@arsen.pw"
+    }
+  ],
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-contrib-cssmin": "^2.2.1",
