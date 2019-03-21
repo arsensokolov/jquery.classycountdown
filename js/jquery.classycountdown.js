@@ -14,6 +14,7 @@
         var DaysLeft, HoursLeft, MinutesLeft, SecondsLeft;
         var secondsLeft;
         var isFired = false;
+	var interval;
         var settings = {
             end: undefined,
             now: $.now(),
@@ -77,7 +78,7 @@
         settings = $.extend(true, settings, options);
         prepare();
         doTick();
-        setInterval(doTick, 1000);
+        interval = setInterval(doTick, 1000);
         doResponsive();
         
         function prepare() {
@@ -155,6 +156,7 @@
             if (secondsLeft <= 0) {
                 if (!isFired) {
                     isFired = true;
+                    clearInterval(interval);
                     settings.onEndCallback();
                 }
                 DaysLeft = 0;
