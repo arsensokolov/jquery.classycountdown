@@ -139,12 +139,12 @@
                 element.find(".ClassyCountdown-seconds .ClassyCountdown-value > span").html(settings.labelsOptions.lang.seconds);
                 element.find(".ClassyCountdown-value > span").attr("style", settings.labelsOptions.style);
             }
-            secondsLeft = settings.end - settings.now;
+            secondsLeft = (settings.end - settings.now) / 1000;
             secondsToDHMS();
         }
         
         function secondsToDHMS() {
-            DaysLeft = Math.floor(secondsLeft / (1000 * 3600 * 24));
+            DaysLeft = Math.floor(secondsLeft / (3600 * 24));
             HoursLeft = Math.floor((secondsLeft % 86400) / 3600);
             MinutesLeft = Math.floor(((secondsLeft % 86400) % 3600) / 60);
             SecondsLeft = Math.floor((((secondsLeft % 86400) % 3600) % 60) % 60);
